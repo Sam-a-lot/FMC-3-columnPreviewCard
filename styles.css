@@ -1,0 +1,28 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.sedans {
+    background-color: #E28625;
+}
+
+.suvs {
+    background-color: #006971;
+}
+
+.luxury {
+    background-color: #004140;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
