@@ -1,3 +1,9 @@
+/* To Do: 
+- Center the whole thing horizontally on desktop
+*/
+
+
+
 body {
     font-family: 'Lexend Deca', sans-serif;
     color: #fff;
@@ -18,28 +24,28 @@ p {
     margin-bottom: 25px;
 }
 
-.card-container {
-    max-width: 920px;
-}
-
+/* Cards */
 .sedans,
 .suvs,
 .luxury {
-    border-radius: 8px;
-    padding: 48px;
+    max-width: 327px;
 }
 
-/* Card background colors */
 .sedans {
     background-color: #E28625;
+    border-radius: 8px 8px 0 0;
+    padding: 48px;
 }
 
 .suvs {
     background-color: #006971;
+    padding: 48px;
 }
 
 .luxury {
     background-color: #004140;
+    border-radius: 0 0 8px 8px;
+    padding: 48px;
 }
 
 /* Overriding bootstrap to style button border radius */
@@ -53,13 +59,6 @@ p {
     background-color: inherit;
 }
 
-/* Screen width > 767px --> change margin between paragraph and button */
-@media (min-width: 768px) {
-    p {
-        margin-bottom: 83px;
-    }
-}
-
 /* Attribution */
 .attribution {
     color: #004140;
@@ -69,4 +68,28 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Screen width > 767px --> 
+- Adjust margin between paragraph and button
+- Adjust cards' border-radius 
+- Adjust width */
+@media (min-width: 768px) {
+    p {
+        margin-bottom: 83px;
+    }
+
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxury {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .sedans,
+    .suvs,
+    .luxury {
+        max-width: 307px;
+    }
 }
